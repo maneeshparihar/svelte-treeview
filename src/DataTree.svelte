@@ -23,9 +23,9 @@ onMount(()=>{
 
 <div>
 
-<!-- {#each jsonData as jd}
-jd
-{/each} -->
+{#each jsonData as jd}
+{jd}
+{/each}
 
 </div>
 
