@@ -14,19 +14,24 @@
     transform-origin: 25% 50%;
     position: relative;
     line-height: 1.1em;
-    font-size: .75em;
+    font-size: 1.5em;
     margin-left: 0;
+    margin-right: 1.5em;
     transition: 150ms;
     color: var(--arrow-sign);
     user-select: none;
     font-family: 'Courier New', Courier, monospace;
   }
-  .expanded {
+  /* .expanded {
     transform: rotateZ(90deg) translateX(-3px);
-  }
+  } */
 </style>
 
 <div class="container" on:click>
-  <div class="arrow" class:expanded={expanded}>{'\u002B'}</div>
-  <!-- <div class="arrow" class:expanded={!expanded}>{'\u002D'}</div> -->
+  {#if expanded}
+    <div class="arrow">{'\u002D'}</div>
+  {/if}
+  {#if !expanded}
+    <div class="arrow">{'\u002B'}</div>
+  {/if}
 </div>

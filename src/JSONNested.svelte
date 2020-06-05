@@ -72,8 +72,8 @@
           <span>…</span>
         {/if}
       </ul>
-    {:else}
-      <span>…</span>
+    <!-- {:else}
+      <span>…</span> -->
     {/if}
   <span>{bracketClose}</span>
 </li>

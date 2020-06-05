@@ -5,10 +5,12 @@
   export let expanded = false;
 
   $: keys = Object.getOwnPropertyNames(value);
-
+  console.log("Key" , key);
+  console.log("value", value);
   function getValue(key) {
     return value[key];
   }
+
 </script>
 <JSONNested
   {key}

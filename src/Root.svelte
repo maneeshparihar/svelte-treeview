@@ -37,4 +37,5 @@
 </style>
 <ul>
   <JSONNode {key} {value} isParentExpanded={true} isParentArray={false} />
+  <!-- <div class="arrow container">{'\u00B1'}</div> -->
 </ul>
